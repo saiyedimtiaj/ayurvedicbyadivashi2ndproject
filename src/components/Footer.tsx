@@ -33,10 +33,10 @@ const Footer = () => {
         </Link>
       </div>
       <div className="mr-auto md:hidden block text-center mt-4 md:text-base text-[13px] mx-auto">
-        <p>আয়ুর্বেদিক বাই আদিবাসীর পণ‍্য</p>
+        <p>আয়ুর্বেদিক বাই আদিবাসীর পণ‍্য।</p>
       </div>
       <div className="text-center mt-4 md:text-base text-[13px] mx-auto">
-        © আয়ুর্বেদিক বাই আদিবাসী বিডি {date.getFullYear()}
+        © আয়ুর্বেদিক বাই আদিবাসী বিডি {date.getFullYear()}।
       </div>
     </div>
   );

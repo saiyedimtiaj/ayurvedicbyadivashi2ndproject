@@ -16,35 +16,35 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AyurvedicbyAdivashi",
+  title: "Ayurvedic By Adivashi ( চুলের যত্নে )",
   icons: "./favicon.ico",
   description:
-    "আমাদের সুপার সেল কোম্ব প্যাকেজ: ২০০ মিলি আয়ুর্বেদিক হেয়ার অয়েল ও ১৫০ মিলি আয়ুর্বেদিক রিলিফ অয়েলের সাথে ২০০ গ্রাম আয়ুর্বেদিক হেয়ার স্পা প‍্যাক ফ্রি।",
+    "আমাদের সুপার সেল কোম্ব প্যাকেজ : ২০০ মিলি আয়ুর্বেদিক হেয়ার অয়েল ও ১৫০ মিলি আয়ুর্বেদিক রিলিফ অয়েলের সাথে ২০০ গ্রাম আয়ুর্বেদিক হেয়ার স্পা প‍্যাক ফ্রি।",
   openGraph: {
-    url: "https://www.ayurvedicbyadivashi.com/",
+    url: "https://ayurvedicbyadivashibd.com",
     type: "website",
-    title: "AyurvedicbyAdivashi",
+    title: "Ayurvedic By Adivashi ( চুলের যত্নে )",
     description:
       "আমাদের সুপার সেল কোম্ব প্যাকেজ: ২০০ মিলি আয়ুর্বেদিক হেয়ার অয়েল ও ১৫০ মিলি আয়ুর্বেদিক রিলিফ অয়েলের সাথে ২০০ গ্রাম আয়ুর্বেদিক হেয়ার স্পা প‍্যাক ফ্রি।",
     images: [
       {
-        url: "https://www.ayurvedicbyadivashi.com/opengraph-image.png",
+        url: "https://ayurvedicbyadivashibd.com/opengraph-image.png",
         width: 1200,
         height: 1200,
-        alt: "AyurvedicbyAdivashi",
+        alt: "Ayurvedic By Adivashi ( চুলের যত্নে )",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     site: "@yourtwitterhandle",
-    title: "AyurvedicbyAdivashi",
+    title: "Ayurvedic By Adivashi ( চুলের যত্নে )",
     description:
       "আমাদের সুপার সেল কোম্ব প্যাকেজ: ২০০ মিলি আয়ুর্বেদিক হেয়ার অয়েল ও ১৫০ মিলি আয়ুর্বেদিক রিলিফ অয়েলের সাথে ২০০ গ্রাম আয়ুর্বেদিক হেয়ার স্পা প‍্যাক ফ্রি।",
-    images: ["https://www.ayurvedicbyadivashi.com/opengraph-image.png"],
+    images: ["https://ayurvedicbyadivashibd.com/opengraph-image.png"],
   },
   alternates: {
-    canonical: "https://www.ayurvedicbyadivashi.com",
+    canonical: "https://ayurvedicbyadivashibd.com",
   },
 };
 
