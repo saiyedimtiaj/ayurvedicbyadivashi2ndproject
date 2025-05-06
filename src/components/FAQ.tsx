@@ -199,4 +199,6 @@ const Faq = () => {
   );
 };
 
+///// somne
+
 export default Faq;
