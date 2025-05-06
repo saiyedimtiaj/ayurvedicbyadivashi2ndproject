@@ -19,13 +19,13 @@ export const metadata: Metadata = {
   title: "Ayurvedic By Adivashi ( চুলের যত্নে )",
   icons: "./favicon.ico",
   description:
-    "আমাদের সুপার সেল কোম্ব প্যাকেজ : ২০০ মিলি আয়ুর্বেদিক হেয়ার অয়েল ও ১৫০ মিলি আয়ুর্বেদিক রিলিফ অয়েলের সাথে ২০০ গ্রাম আয়ুর্বেদিক হেয়ার স্পা প‍্যাক ফ্রি।",
+    "২০০ মিলি আদিবাসী  হেয়ার অয়েল ও ১০০ গ্রাম আদিবাসী  হেয়ার স্পা প‍্যাক। ৪০০ মিলি  আদিবাসী  হেয়ার অয়েল ও ২০০ গ্রাম আদিবাসী  হেয়ার স্পা প‍্যাক।",
   openGraph: {
     url: "https://ayurvedicbyadivashibd.com",
     type: "website",
     title: "Ayurvedic By Adivashi ( চুলের যত্নে )",
     description:
-      "আমাদের সুপার সেল কোম্ব প্যাকেজ: ২০০ মিলি আয়ুর্বেদিক হেয়ার অয়েল ও ১৫০ মিলি আয়ুর্বেদিক রিলিফ অয়েলের সাথে ২০০ গ্রাম আয়ুর্বেদিক হেয়ার স্পা প‍্যাক ফ্রি।",
+      "২০০ মিলি আদিবাসী  হেয়ার অয়েল ও ১০০ গ্রাম আদিবাসী  হেয়ার স্পা প‍্যাক। ৪০০ মিলি  আদিবাসী  হেয়ার অয়েল ও ২০০ গ্রাম আদিবাসী  হেয়ার স্পা প‍্যাক।",
     images: [
       {
         url: "https://ayurvedicbyadivashibd.com/opengraph-image.png",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     site: "@yourtwitterhandle",
     title: "Ayurvedic By Adivashi ( চুলের যত্নে )",
     description:
-      "আমাদের সুপার সেল কোম্ব প্যাকেজ: ২০০ মিলি আয়ুর্বেদিক হেয়ার অয়েল ও ১৫০ মিলি আয়ুর্বেদিক রিলিফ অয়েলের সাথে ২০০ গ্রাম আয়ুর্বেদিক হেয়ার স্পা প‍্যাক ফ্রি।",
+      "২০০ মিলি আদিবাসী  হেয়ার অয়েল ও ১০০ গ্রাম আদিবাসী  হেয়ার স্পা প‍্যাক। ৪০০ মিলি  আদিবাসী  হেয়ার অয়েল ও ২০০ গ্রাম আদিবাসী  হেয়ার স্পা প‍্যাক।",
     images: ["https://ayurvedicbyadivashibd.com/opengraph-image.png"],
   },
   alternates: {
@@ -99,15 +99,17 @@ export default function RootLayout({
           />
         </noscript>
 
-        <Script id="microsoft-clarity" strategy="afterInteractive">
-          {`
-    (function(c,l,a,r,i,t,y){
-      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "rf06k8zlzo");
-  `}
-        </Script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "${process.env.NEXT_PUBLIC_CLARITY_ID}");
+    `,
+          }}
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
