@@ -256,13 +256,13 @@ const FormOrder = ({
                   )}
                   <p className="block md:hidden font-bold text-black">
                     <span className="text-sm font-extrabold mr-1">৳</span>
-                    {product.offerPrice}
+                    {product.offerPrice}/-
                   </p>
                 </div>
                 <div className="md:block hidden z-50 text-right md:mr-6">
                   <p className="font-bold text-black">
                     <span className="text-sm font-extrabold mr-1">৳</span>
-                    {product.offerPrice}
+                    {product.offerPrice}/-
                   </p>
                 </div>
               </div>

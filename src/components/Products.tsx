@@ -44,7 +44,7 @@ const Products = ({
           className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3
               `}
         >
-          {products.slice(0, 1).map((product) => (
+          {products.slice(0, 2).map((product) => (
             <div
               key={product.id}
               className={`bg-white rounded-xl shadow-md overflow-hidden prod-card h-full flex flex-col`}
@@ -87,7 +87,7 @@ const Products = ({
                         ৳
                       </span>
                       <span className="text-green-700">
-                        {product.offerPrice}
+                        {product.offerPrice}/-
                       </span>
                     </p>
                   </span>
@@ -115,75 +115,6 @@ const Products = ({
               </div>
             </div>
           ))}
-          {/* 2nd product ৪০০ মিলি আয়ুর্বেদিক হেয়ার অয়েল ও ২০০ গ্রাম আয়ুর্বেদিক হেয়ার স্পা প‍্যাক। */}
-          <div
-            className={`bg-white block rounded-xl shadow-md overflow-hidden prod-card 
-              `}
-          >
-            <div className="h-64 overflow-hidden relative">
-              <Image
-                width={300}
-                height={300}
-                src={products[1].image}
-                alt={products[1].name}
-                className="w-full h-full transition-transform duration-500 hover:scale-110"
-              />
-              {products[1].isFreeDelibery && (
-                <span className="text-base absolute top-2 right-2 text-white font-medium bg-orange-600 px-2.5 py-0.5 rounded-full">
-                  ফ্রি ডেলিভারি
-                </span>
-              )}
-            </div>
-            <div className="p-4">
-              <span className="px-2.5 py-0.5 bg-orange-600 text-white text-base font-medium rounded-full">
-                {products[1].tag}
-              </span>
-              <h3 className="text-lg mt-2 font-bold text-gray-900 mb-2">
-                ৪০০ মিলি আদিবাসী হেয়ার অয়েল ও
-                <span className="text-[15px] ml-1">
-                  <span className="text-[17px]"> ২০০ গ্রাম </span> আদিবাসী হেয়ার
-                  স্পা প‍্যাক।
-                </span>
-              </h3>
-              <div className="flex justify-between items-center mt-9">
-                <span className="text-xl font-bold text-[#016531]">
-                  <span className="text-xl text-black font-extrabold mr-1">
-                    ৳
-                  </span>
-                  <span className="line-through text-black">
-                    {products[1].price}
-                  </span>
-                  <br />
-                  <span className="text-base">অফার মূল্য 🎁</span>
-                  <p>
-                    <span className="text-xl text-black font-extrabold">৳</span>
-                    <span className="text-green-700">
-                      {products[1].offerPrice}
-                    </span>
-                  </p>
-                </span>
-                <motion.button
-                  onClick={() => handleProductSelect(products[1].id)}
-                  className="px-4 relative py-2 bg-[#008037] mr-2 cursor-pointer text-lg text-white rounded-lg transition-all font-medium duration-300 flex items-center mt-auto"
-                >
-                  <motion.div
-                    className="absolute inset-0 bg-gradient-to-r from-white/10 via-white/50 to-transparent opacity-0"
-                    animate={{
-                      opacity: [0, 1, 0],
-                      x: ["-100%", "100%"],
-                    }}
-                    transition={{
-                      repeat: Infinity,
-                      duration: 2,
-                      ease: "linear",
-                    }}
-                  />
-                  <ShoppingCart size={16} className="mr-2" />
-                  অর্ডার দিন
-                </motion.button>
-              </div>
-            </div>
-          </div>
           {/* 3rd product ২০০ মিলি আদিবাসী  হেয়ার অয়েল ও ১৫০ মিলি আয়ুর্বেদিক রিলিফ অয়েলের সাথে ২০০ গ্রাম আয়ুর্বেদিক হেয়ার স্পা প‍্যাক ফ্রি। */}
           <div
             className={`bg-white block rounded-xl shadow-md overflow-hidden prod-card 
@@ -208,14 +139,14 @@ const Products = ({
                 {products[2].tag}
               </span>
               <h3 className="text-lg mt-2 font-bold text-gray-900 mb-2">
-                ২০০ মিলি আদিবাসী হেয়ার অয়েল ও
+                200ml ইন্ডিয়ান আদিবাসী হেয়ার অয়েল ও
                 <span className="text-[15px] ml-1">
-                  <span className="text-[17px]"> ১৫০ মিলি</span> আয়ুর্বেদিক
-                  রিলিফ অয়েলের সাথে
+                  <span className="text-[17px]"> 150ml</span> আয়ুর্বেদিক রিলিফ
+                  অয়েলের সাথে
                 </span>{" "}
                 <span className="text-[15px] ml-1">
-                  <span className="text-[17px]"> ২০০ গ্রাম </span>
-                  আদিবাসী হেয়ার স্পা প‍্যাক ফ্রি।
+                  <span className="text-[17px]"> 200gm </span>
+                  আয়ুর্বেদিক হেয়ার স্পা প‍্যাক-ফ্রি।
                 </span>
               </h3>
               <div className="flex justify-between items-center">
@@ -232,7 +163,7 @@ const Products = ({
                     <span className="text-xl text-black font-extrabold">৳</span>
                     <span className="text-green-700">
                       {" "}
-                      {products[2].offerPrice}
+                      {products[2].offerPrice}/-
                     </span>
                   </p>
                 </span>

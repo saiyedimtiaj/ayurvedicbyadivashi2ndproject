@@ -6,7 +6,8 @@ const HeadingText = () => {
   return (
     <div className="font-bold relative text-center mx-2 md:mx-auto px-3 md:px-5 border-green-600 border-2 pt-1 md:py-7 max-w-[900px] rounded-2xl mt-5 md:mt-14">
       <h1 className="text-[18px]  md:text-4xl ">
-        চুলের যত্নে প্রাচীন আদিবাসী ফর্মুলার বিশ্বস্ত সমাধান, আজও কার্যকর।
+        চুলের সমস্যায় ফার্স্ট চয়েস ইন্ডিয়ান-ফর্মুলায় তৈরী আদিবাসী আয়ুর্বেদিক
+        হেয়ার অয়েল উইথ শ্রীলঙ্কান-কোকোনাট মিক্স।
       </h1>
       <Image
         width={100}
