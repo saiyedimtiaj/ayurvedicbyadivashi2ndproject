@@ -10,8 +10,7 @@ import logo from "../assets/ADIVASHI-LOGOiu-01.png";
 import banner1 from "../assets/banner1.jpg";
 import banner2 from "../assets/banner2.jpg";
 import banner3 from "../assets/banner3.png";
-import banner4 from "../assets/banner4.jpg";
-import banner5 from "../assets/banner5.jpg";
+import banner4 from "../assets/07-05-25.jpg";
 import banner6 from "../assets/banner6.jpg";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -66,7 +65,7 @@ export default function Hero() {
               modules={[Autoplay, Pagination, Navigation]}
               className="mySwiper"
             >
-              {[banner1, banner2, banner3, banner4, banner5, banner6].map(
+              {[banner1, banner6, banner2, banner4, banner1, banner3].map(
                 (banner, index) => (
                   <SwiperSlide key={index}>
                     <Image
